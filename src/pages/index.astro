@@ -1,0 +1,352 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Logo from '../components/Logo.astro';
+import { getWhatsAppHref } from '../lib/whatsapp';
+
+const wa = getWhatsAppHref();
+const pageTitle = 'Transforme Seu Ambiente | Especialistas em Papel de Parede Líquido';
+const pageDescription =
+	'Especialistas em instalação de Papel de Parede Líquido. Transforme paredes com um acabamento luxuoso, sem emendas, térmico e acústico. Solicite um orçamento!';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+	<header class="navbar">
+		<div class="container nav-content">
+			<a href="/" class="logo" aria-label="Parede Líquida Campinas — início">
+				<Logo />
+			</a>
+			<nav class="nav-links">
+				<a href="#beneficios">Benefícios</a>
+				<a href="#sobre">Sobre o Material</a>
+				<a href="#aplicacao">Aplicações</a>
+			</nav>
+			<a href={wa} target="_blank" rel="noopener noreferrer" class="btn btn-outline" data-hover="Fale Conosco"
+				>Fale Conosco</a
+			>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="hero-bg">
+			<img src="/assets/hero_bg.png" alt="Sala luxuosa com papel de parede líquido" width="1920" height="1080" />
+			<div class="overlay"></div>
+		</div>
+		<div class="container hero-content animate-fade-in-up">
+			<span class="badge">Inovação em Revestimentos</span>
+			<h1>A Evolução da <span>Decoração</span> para Suas Paredes</h1>
+			<p>
+				O Papel de Parede Líquido oferece um acabamento sem emendas, luxuoso e ecologicamente correto. Transforme
+				qualquer ambiente em uma obra de arte exclusiva.
+			</p>
+			<div class="hero-actions">
+				<a href={wa} target="_blank" rel="noopener noreferrer" class="btn btn-primary pulse-btn">
+					<svg
+						viewBox="0 0 24 24"
+						width="24"
+						height="24"
+						stroke="currentColor"
+						stroke-width="2"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="whatsapp-icon"
+						aria-hidden="true"
+						><path
+							d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+						></path></svg
+					>
+					Fazer Orçamento Gratuito
+				</a>
+			</div>
+			<div class="trust-indicators">
+				<div class="indicator">
+					<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"
+						><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"
+						></polyline></svg
+					>
+					Feito em até 24h
+				</div>
+				<div class="indicator">
+					<svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"
+						><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"
+						></polyline></svg
+					>
+					Sem sujeira ou entulho
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="beneficios" class="benefits section">
+		<div class="container">
+			<div class="section-header reveal-on-scroll">
+				<h2>Por que escolher o <br /><span>Papel de Parede Líquido?</span></h2>
+				<p>
+					Esqueça emendas, bolhas ou problemas com umidade. Conheça as vantagens que o mercado tradicional não te
+					conta.
+				</p>
+			</div>
+
+			<div class="grid grid-3">
+				<div class="card glass reveal-on-scroll delay-1">
+					<div class="card-icon">✨</div>
+					<h3>Sem Emendas</h3>
+					<p>
+						Ao contrário dos rolos tradicionais, a aplicação cria uma superfície contínua, perfeitamente lisa e sem
+						marcas ou recortes visíveis.
+					</p>
+				</div>
+				<div class="card glass reveal-on-scroll delay-2">
+					<div class="card-icon">🌡️</div>
+					<h3>Conforto Térmico</h3>
+					<p>Atua como um excelente isolante. Mantém o ambiente fresco nos dias quentes e retém o calor durante o inverno.</p>
+				</div>
+				<div class="card glass reveal-on-scroll delay-3">
+					<div class="card-icon">🔇</div>
+					<h3>Isolamento Acústico</h3>
+					<p>
+						Sua textura microporosa absorve ondas sonoras, reduzindo ecos e diminuindo a propagação de barulho no seu
+						espaço.
+					</p>
+				</div>
+				<div class="card glass reveal-on-scroll delay-1">
+					<div class="card-icon">💧</div>
+					<h3>Regula a Umidade</h3>
+					<p>O material "respira", evitando a formação de mofo e fungos, ideal para quem sofre com problemas alérgicos respiratórios.</p>
+				</div>
+				<div class="card glass reveal-on-scroll delay-2">
+					<div class="card-icon">🛠️</div>
+					<h3>Fácil Reparo</h3>
+					<p>Riscou ou manchou? Basta umedecer a área, espalhar novamente a massa mágica e a parede estará nova sem notar remendos.</p>
+				</div>
+				<div class="card glass reveal-on-scroll delay-3">
+					<div class="card-icon">♻️</div>
+					<h3>100% Ecológico</h3>
+					<p>Feito de fibras de seda, algodão e celulose natural, não exala odores químicos e é neutro para o meio ambiente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sobre" class="split-section section bg-light">
+		<div class="container grid grid-2 items-center">
+			<div class="split-image-container reveal-on-scroll">
+				<div class="decorative-blob"></div>
+				<img
+					src="/assets/texture.png"
+					alt="Textura do papel de parede líquido detalhe"
+					class="rounded-image shadow-lg"
+					width="800"
+					height="600"
+				/>
+				<div class="floating-card glass">
+					<div class="stars">★★★★★</div>
+					<p>"O acabamento texturizado supera qualquer pintura premium"</p>
+				</div>
+			</div>
+			<div class="split-content reveal-on-scroll">
+				<span class="badge badge-dark">Material Premium</span>
+				<h2>Elegância nos detalhes: <br />a textura perfeita.</h2>
+				<p>
+					Nossos papéis de parede líquidos são compostos por fibras naturais como seda e algodão, integrados com
+					elementos decorativos que criam um brilho sutil e sofisticado.
+				</p>
+				<ul class="feature-list">
+					<li>
+						<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"
+							><path d="M5 12l5 5l10 -10"></path></svg
+						>
+						<span>Alta durabilidade, superando 10 anos de vida útil.</span>
+					</li>
+					<li>
+						<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"
+							><path d="M5 12l5 5l10 -10"></path></svg
+						>
+						<span>Cobre imperfeições e pequenas fissuras na parede.</span>
+					</li>
+					<li>
+						<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"
+							><path d="M5 12l5 5l10 -10"></path></svg
+						>
+						<span>Inúmeras cores, misturas e acabamentos possíveis.</span>
+					</li>
+				</ul>
+				<a href={wa} target="_blank" rel="noopener noreferrer" class="btn btn-secondary mt-4">Ver Catálogo via WhatsApp &rarr;</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="aplicacao" class="split-section section">
+		<div class="container grid grid-2 items-center reverse-mobile">
+			<div class="split-content reveal-on-scroll">
+				<span class="badge badge-dark">Processo Limpo</span>
+				<h2>Como realizamos <br />a mágica no seu ambiente.</h2>
+				<p>
+					Nós cuidamos de todo o processo de instalação para você, garantindo uma aplicação rápida, profissional e
+					completamente livre de estresse.
+				</p>
+				<div class="process-steps">
+					<div class="step">
+						<div class="step-num">1</div>
+						<div class="step-info">
+							<h4>Preparação Rápida</h4>
+							<p>Protegemos o ambiente com lonas. Não há necessidade de lixar a parede se houver pequenas rachaduras; o material cobre tudo.</p>
+						</div>
+					</div>
+					<div class="step">
+						<div class="step-num">2</div>
+						<div class="step-info">
+							<h4>Aplicação Artesanal</h4>
+							<p>Nossa equipe aplica o material úmido utilizando desempenadeiras de acrílico com movimentos precisos.</p>
+						</div>
+					</div>
+					<div class="step">
+						<div class="step-num">3</div>
+						<div class="step-info">
+							<h4>Pronto! Sem odores</h4>
+							<p>A secagem não emite NENHUM odor tóxico. Você pode usar o cômodo no mesmo dia em que o serviço é finalizado.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="split-image-container reveal-on-scroll">
+				<div class="decorative-outline"></div>
+				<img
+					src="/assets/process.png"
+					alt="Profissional aplicando o material na parede"
+					class="rounded-image shadow-lg"
+					width="800"
+					height="600"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section
+		class="cta-section"
+		style="background-image: linear-gradient(rgba(26, 26, 26, 0.8), rgba(26, 26, 26, 0.8)), url('/assets/hero_bg.png');"
+	>
+		<div class="container text-center reveal-on-scroll">
+			<h2>Pronto para elevar o nível da sua decoração?</h2>
+			<p>
+				Atendemos toda a região. Entre em contato agora, conte-nos suas ideias e agende uma visita técnica ou orçamento
+				rápido sem compromisso via WhatsApp!
+			</p>
+			<a href={wa} target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large glow-btn cta-main-btn">
+				<svg
+					viewBox="0 0 24 24"
+					width="28"
+					height="28"
+					stroke="currentColor"
+					stroke-width="2"
+					fill="none"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="whatsapp-icon"
+					aria-hidden="true"
+					><path
+						d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+					></path></svg
+				>
+				Falar com Especialistas
+			</a>
+			<p class="small-text cta-footnote">Atendimento rápido por WhatsApp • Orçamento sem compromisso</p>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content grid grid-3">
+				<div class="footer-logo-col">
+					<a href="/" class="logo" aria-label="Parede Líquida Campinas — início">
+						<Logo variant="footer" />
+					</a>
+					<p class="mt-4 opacity-70">A revolução térmica, acústica e estética para os mais altos padrões de decoração de interiores.</p>
+				</div>
+				<div class="footer-links">
+					<h4>Links Úteis</h4>
+					<ul>
+						<li><a href="#beneficios" class="link-hover">Benefícios</a></li>
+						<li><a href="#sobre" class="link-hover">Sobre a Textura</a></li>
+						<li><a href="#aplicacao" class="link-hover">Como é Aplicado</a></li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<h4>Contato Seguro</h4>
+					<a href={wa} target="_blank" rel="noopener noreferrer" class="contact-card">
+						<div class="contact-icon">
+							<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" aria-hidden="true"
+								><path
+									d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+								></path></svg
+							>
+						</div>
+						<div>
+							<span>WhatsApp</span>
+							<strong>(19) 99214-9699</strong>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<p>&copy; 2026 Parede Líquida. Todos os direitos reservados. Design e Otimização para Alta Performance.</p>
+				<p class="footer-credit">
+					Site criado pela <a href="https://arkersoft.com.br" target="_blank" rel="noopener noreferrer">arkersoft.com.br</a>.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<a
+		href={wa}
+		class="whatsapp-float"
+		target="_blank"
+		rel="noopener noreferrer"
+		aria-label="Fale conosco no WhatsApp"
+	>
+		<svg
+			viewBox="0 0 24 24"
+			width="28"
+			height="28"
+			stroke="currentColor"
+			stroke-width="2"
+			fill="none"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+			><path
+				d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+			></path></svg
+		>
+	</a>
+
+	<script>
+		const navbar = document.querySelector('.navbar');
+		if (navbar) {
+			window.addEventListener('scroll', () => {
+				if (window.scrollY > 50) {
+					navbar.classList.add('scrolled');
+				} else {
+					navbar.classList.remove('scrolled');
+				}
+			});
+		}
+
+		const observerOptions = {
+			root: null,
+			rootMargin: '0px',
+			threshold: 0.15,
+		};
+
+		const observer = new IntersectionObserver((entries, obs) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('is-visible');
+					obs.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('.reveal-on-scroll').forEach((el) => observer.observe(el));
+	</script>
+</BaseLayout>

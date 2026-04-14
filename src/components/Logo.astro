@@ -1,0 +1,22 @@
+---
+interface Props {
+	/** `nav`: header compacto · `footer`: maior no rodapé */
+	variant?: 'nav' | 'footer';
+}
+
+const { variant = 'nav' } = Astro.props;
+const imgClass = variant === 'footer' ? 'logo-img logo-img--footer' : 'logo-img';
+const loading = variant === 'footer' ? 'lazy' : 'eager';
+const fetchPriority = variant === 'footer' ? 'low' : 'high';
+---
+
+<img
+	src="/images/logo-parede-liquida.png"
+	alt="Parede Líquida Campinas"
+	class={imgClass}
+	width="480"
+	height="254"
+	decoding="async"
+	loading={loading}
+	fetchpriority={fetchPriority}
+/>
